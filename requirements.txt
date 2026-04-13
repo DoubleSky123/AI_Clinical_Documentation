@@ -30,6 +30,9 @@ redis>=5.0.0
 # Monitoring
 prometheus-fastapi-instrumentator>=6.0.0
 
+# Language detection
+langdetect>=1.0.9
+
 # Testing
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
