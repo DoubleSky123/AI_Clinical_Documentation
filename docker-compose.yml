@@ -1,0 +1,64 @@
+services:
+
+  # ── FastAPI application ──────────────────────────────────────────────────────
+  api:
+    profiles: [full]
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379
+      # Ollama runs on the host machine — reachable via host.docker.internal
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      # Paths inside the container (ffmpeg installed via apt, no manual dir needed)
+      - FFMPEG_DIR=
+      - WHISPER_CACHE=/root/.cache/whisper
+    volumes:
+      - ./data:/app/data                      # knowledge base txt files
+      - ./vectorstore:/app/vectorstore        # persisted FAISS index
+      - whisper_cache:/root/.cache/whisper    # Whisper model cache
+    depends_on:
+      - redis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # lets container reach host Ollama
+
+  # ── Redis cache ──────────────────────────────────────────────────────────────
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # ── Prometheus metrics collector ─────────────────────────────────────────────
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  # ── Grafana dashboard ────────────────────────────────────────────────────────
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+
+volumes:
+  redis_data:
+  whisper_cache:
+  grafana_data:

@@ -1,0 +1,59 @@
+Upper Respiratory Infection (URI) / Common Cold — Clinical Guidelines
+======================================================================
+
+DIAGNOSIS
+---------
+URI is a clinical diagnosis. No routine testing needed. Characterized by:
+- Nasal congestion and rhinorrhea (hallmark symptoms)
+- Sore throat (often first symptom)
+- Cough (may persist 2–3 weeks)
+- Low-grade fever or no fever
+- Mild malaise
+
+Average duration: 7–10 days. Cough may persist up to 3 weeks.
+
+Common pathogens: Rhinovirus (most common), coronavirus, adenovirus,
+RSV (infants/elderly), parainfluenza.
+
+ICD-10 CODES
+------------
+J00    — Acute nasopharyngitis (common cold)
+J06.9  — Acute upper respiratory infection, unspecified
+J02.9  — Acute pharyngitis, unspecified
+J03.90 — Acute tonsillitis, unspecified
+
+DISTINGUISHING URI FROM BACTERIAL INFECTIONS
+---------------------------------------------
+Bacterial sinusitis suggested by: symptoms >10 days without improvement,
+severe localized sinus pain/pressure, fever >39°C, double worsening
+(improves then worsens).
+
+Strep pharyngitis (GAS): Centor criteria — tonsillar exudates, tender anterior
+cervical nodes, fever, absence of cough. Score >= 3 → rapid strep test indicated.
+
+TREATMENT — ANTIBIOTICS NOT INDICATED FOR VIRAL URI
+-----------------------------------------------------
+Symptomatic relief only:
+
+Nasal congestion:
+  - Intranasal saline irrigation
+  - Pseudoephedrine 30–60mg q4–6h PRN (avoid in HTN)
+  - Oxymetazoline nasal spray x 3 days max (rebound congestion risk)
+
+Sore throat / fever:
+  - Acetaminophen 500–1000mg q4–6h PRN
+  - Ibuprofen 400–600mg q6–8h PRN with food
+  - Throat lozenges / saltwater gargle
+
+Cough:
+  - Honey (adults and children >1 year) — evidence-based
+  - Dextromethorphan 15–30mg q4–6h PRN
+  - Guaifenesin 200–400mg q4h PRN (expectorant)
+
+RETURN PRECAUTIONS
+------------------
+- Symptoms not improving after 10 days
+- Fever >39°C or returning after initial resolution
+- Severe facial pain/pressure (possible sinusitis)
+- Ear pain (possible otitis media)
+- Difficulty breathing or swallowing

@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s      # pull metrics every 15 seconds
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'clinical-api'
+    static_configs:
+      - targets: ['host.docker.internal:8000']   # container name resolves inside Docker network
+    metrics_path: '/metrics'

@@ -1,0 +1,232 @@
+DENTAL CLINICAL GUIDELINES — PRIMARY CARE & GENERAL DENTISTRY
+Source: ADA (American Dental Association), AAE (American Association of Endodontists), AAP (American Academy of Periodontology)
+
+================================================================================
+1. COMMON DENTAL DIAGNOSES & ICD-10-CM CODES
+================================================================================
+
+DENTAL CARIES (TOOTH DECAY)
+- K02.3  Arrested dental caries
+- K02.51 Dental caries on pit and fissure surface limited to enamel
+- K02.52 Dental caries on pit and fissure surface penetrating into dentin
+- K02.53 Dental caries on pit and fissure surface penetrating into pulp
+- K02.61 Dental caries on smooth surface limited to enamel
+- K02.62 Dental caries on smooth surface penetrating into dentin
+- K02.63 Dental caries on smooth surface penetrating into pulp
+- K02.7  Dental root caries
+- K02.9  Dental caries, unspecified
+
+PULP AND PERIAPICAL CONDITIONS
+- K04.0  Pulpitis (reversible and irreversible)
+- K04.01 Reversible pulpitis — mild inflammation, responsive to cold, pain subsides
+- K04.02 Irreversible pulpitis — severe, spontaneous, lingering pain; requires RCT or extraction
+- K04.1  Necrosis of dental pulp
+- K04.2  Pulp degeneration
+- K04.4  Acute apical periodontitis of pulpal origin
+- K04.5  Chronic apical periodontitis (periapical granuloma)
+- K04.6  Periapical abscess with sinus
+- K04.7  Periapical abscess without sinus — swelling, severe pain, percussion sensitive
+- K04.8  Radicular cyst
+
+PERIODONTAL DISEASE
+- K05.00 Acute gingivitis, plaque induced
+- K05.10 Chronic gingivitis, plaque induced — bleeding on probing, no bone loss
+- K05.20 Aggressive periodontitis, unspecified
+- K05.211 Aggressive periodontitis, localized, slight
+- K05.221 Aggressive periodontitis, generalized, slight
+- K05.30 Chronic periodontitis, unspecified
+- K05.311 Chronic periodontitis, localized, slight (1-2mm bone loss)
+- K05.312 Chronic periodontitis, localized, moderate (3-4mm bone loss)
+- K05.313 Chronic periodontitis, localized, severe (≥5mm bone loss)
+- K05.321 Chronic periodontitis, generalized, slight
+- K05.322 Chronic periodontitis, generalized, moderate
+- K05.323 Chronic periodontitis, generalized, severe
+- K05.4  Periodontosis
+- K05.5  Other periodontal diseases
+
+TOOTH LOSS & EDENTULISM
+- K08.101 Complete loss of teeth, unspecified cause, class I
+- K08.401 Partial loss of teeth, unspecified cause, class I
+
+OTHER DENTAL CONDITIONS
+- K08.0  Exfoliation of teeth due to systemic causes
+- K08.1  Loss of teeth due to accident, extraction, or local periodontal disease
+- K08.2  Attrition of teeth
+- K08.3  Retained dental root
+- K08.81 Cracked tooth — incomplete fracture of enamel/dentin
+- K09.0  Developmental odontogenic cysts
+- K09.1  Developmental non-odontogenic cysts of oral region
+- K10.2  Inflammatory conditions of jaws (osteitis, osteomyelitis)
+- K10.3  Alveolitis of jaws — dry socket (alveolar osteitis) post-extraction
+- K11.20 Sialadenitis, unspecified
+- K12.0  Recurrent oral aphthae
+- K12.1  Other forms of stomatitis
+- S02.5  Fracture of tooth — traumatic
+
+TMJ / OROFACIAL PAIN
+- M26.60 Temporomandibular joint disorder, unspecified
+- M26.61 Adhesions and ankylosis of temporomandibular joint
+- M26.62 Arthralgia of temporomandibular joint
+- M26.63 Articular disc disorder of temporomandibular joint
+- G50.0  Trigeminal neuralgia
+- R51    Headache (orofacial pain referral)
+
+================================================================================
+2. CLINICAL ASSESSMENT — DENTAL EXAMINATION
+================================================================================
+
+SUBJECTIVE (Chief Complaint)
+- Pain characteristics: onset, duration, intensity (0-10 VAS), quality (sharp/dull/throbbing/constant/intermittent)
+- Thermal sensitivity: hot vs cold, lingering vs immediate resolution
+- Spontaneous pain: present = irreversible pulpitis or necrosis
+- Swelling location: localized vs diffuse, intraoral vs extraoral
+- Previous dental treatment on affected tooth
+- Medical history relevant to dental care: bleeding disorders, bisphosphonate use, immunosuppression, diabetes, cardiac conditions (endocarditis risk)
+- Allergies: especially penicillin, NSAIDs, latex
+
+OBJECTIVE (Clinical & Radiographic Findings)
+- Extraoral: facial asymmetry, lymphadenopathy, trismus
+- Intraoral: soft tissue, mucosa, swelling, sinus tracts (fistula)
+- Tooth: mobility (Grade 0-3), color change, fracture line, caries depth
+- Periodontal: probing depths (mm), bleeding on probing, furcation involvement (Class I/II/III), recession
+- Pulp vitality tests:
+  * Cold test (Endo-Ice): normal = brief, transient; abnormal = no response (necrosis) or lingering (irreversible pulpitis)
+  * Electric pulp test (EPT)
+  * Percussion test: positive = apical periodontitis or abscess
+  * Palpation test: positive = periapical pathology
+- Radiographic: periapical radiograph, bitewing, CBCT when indicated
+  * Caries depth relative to pulp
+  * Periapical lucency = periapical pathology
+  * Bone loss pattern (horizontal vs vertical)
+  * Root morphology, canal calcification
+
+================================================================================
+3. TREATMENT PROTOCOLS
+================================================================================
+
+DENTAL CARIES
+- Enamel only (K02.51/K02.61): Fluoride varnish, remineralization, sealants, monitor
+- Dentin (K02.52/K02.62): Composite resin restoration or amalgam
+- Pulp involvement (K02.53/K02.63): Root canal therapy (RCT) or extraction
+
+REVERSIBLE PULPITIS (K04.01)
+- Remove caries, place sedative dressing (IRM/ZOE), assess 6-8 weeks
+- If resolved → definitive restoration
+- If progresses to irreversible → RCT
+
+IRREVERSIBLE PULPITIS / PULP NECROSIS (K04.02, K04.1)
+- Root canal therapy (RCT): pulpectomy, canal shaping, obturation
+- Alternative: extraction with or without implant/bridge planning
+- Antibiotics NOT indicated unless systemic involvement (fever, cellulitis, trismus)
+
+PERIAPICAL ABSCESS (K04.7)
+- Incision and drainage (I&D) if fluctuant swelling
+- RCT or extraction of offending tooth
+- Antibiotics ONLY if:
+  * Systemic signs: fever >101°F, malaise, cervical lymphadenopathy
+  * Cellulitis (diffuse swelling, no fluctuance)
+  * Immunocompromised patient
+  * Rapid progression or trismus
+
+PERIODONTAL DISEASE
+- Gingivitis (K05.00/K05.10): Oral hygiene instruction, scaling and root planing (SRP), chlorhexidine 0.12% rinse
+- Mild-Moderate Periodontitis: Full-mouth SRP, re-evaluation at 4-6 weeks
+- Severe Periodontitis: SRP + periodontal surgery consult
+- Maintenance: every 3-4 months periodontal recall
+
+DRY SOCKET / ALVEOLAR OSTEITIS (K10.3)
+- Onset 2-5 days post-extraction, severe throbbing pain, empty socket
+- Treatment: gentle irrigation, alvogyl/iodoform packing, analgesics
+- NO antibiotics unless secondary infection present
+
+TMJ DISORDERS (M26.6x)
+- Conservative: soft diet, NSAIDs, heat/ice, jaw exercises, occlusal splint
+- Referral: oral surgery or orofacial pain specialist for refractory cases
+
+================================================================================
+4. PHARMACOLOGY — DENTAL PRESCRIBING
+================================================================================
+
+ANALGESICS (first-line for dental pain)
+- Ibuprofen 400-600mg PO q6-8h with food (max 2400mg/day) — preferred, anti-inflammatory
+- Acetaminophen 500-1000mg PO q6h (max 4g/day) — for NSAID contraindications
+- Combination: Ibuprofen 400mg + Acetaminophen 500mg alternating q3h — superior to opioids for acute dental pain
+- Avoid opioids as first-line for dental pain per ADA 2023 guidelines
+
+ANTIBIOTICS (dental indications)
+First-line:
+- Amoxicillin 500mg PO TID x 3-7 days
+- Amoxicillin-clavulanate (Augmentin) 875mg PO BID x 5-7 days (for severe/refractory)
+
+Penicillin allergy:
+- Azithromycin 500mg PO on day 1, then 250mg PO QD x 4 days
+- Clindamycin 300mg PO TID x 3-7 days (caution: C. difficile risk)
+- Metronidazole 500mg PO TID x 7 days (often combined with amoxicillin for anaerobic coverage)
+
+Antibiotic prophylaxis (before dental procedures):
+- Indicated for: prosthetic cardiac valves, history of infective endocarditis, cardiac transplant with valvulopathy, certain congenital heart disease
+- Amoxicillin 2g PO 30-60 min before procedure
+- Penicillin allergy: Azithromycin 500mg or Clindamycin 600mg PO 30-60 min before
+
+LOCAL ANESTHESIA
+- Lidocaine 2% with epinephrine 1:100,000 — standard, 1-2 carpules
+- Articaine 4% with epinephrine 1:100,000 — better tissue penetration
+- Mepivacaine 3% (no epinephrine) — cardiac patients, pregnancy
+- Maximum doses: Lidocaine 4.4mg/kg (max 300mg); Articaine 7mg/kg (max 500mg)
+
+TOPICAL AGENTS
+- Chlorhexidine gluconate 0.12% rinse BID — periodontal, post-surgical
+- Benzocaine 20% topical — pre-injection anesthesia
+
+================================================================================
+5. HIGH-RISK FLAGS IN DENTAL PATIENTS
+================================================================================
+
+SYSTEMIC FLAGS
+- Airway compromise: trismus, floor of mouth swelling, dysphagia → EMERGENCY, ER referral
+- Ludwig's angina: bilateral submandibular/sublingual space infection → life-threatening, IV antibiotics + surgical drainage
+- Cavernous sinus thrombosis risk: maxillary posterior tooth infection spreading superiorly
+- Uncontrolled bleeding: pre-existing coagulopathy, anticoagulants (warfarin, NOACs)
+- Bisphosphonate use (IV > oral): risk of medication-related osteonecrosis of jaw (MRONJ) — avoid extractions if possible
+- Uncontrolled diabetes: increased infection risk, poor healing
+- Immunocompromised: HIV, chemotherapy, immunosuppressants — aggressive management
+- Pregnancy: avoid elective procedures in first trimester; safe window is second trimester
+
+DENTAL EMERGENCY FLAGS
+- Facial space infection (cellulitis): requires immediate antibiotic therapy and possible hospital admission
+- Dental trauma with avulsion: reimplant within 30 min for best prognosis; store in milk or saline
+- Hemorrhage post-extraction: local pressure, hemostatic agents, sutures
+- Acute necrotizing ulcerative gingivitis (ANUG): fever, malaise, punched-out interdental papillae — Metronidazole + debridement
+
+================================================================================
+6. DENTAL SOAP NOTE STRUCTURE
+================================================================================
+
+SUBJECTIVE
+- Chief complaint (tooth number using Universal Numbering System #1-32)
+- Pain description: onset, quality, duration, aggravating/relieving factors, thermal response
+- Relevant medical and dental history
+
+OBJECTIVE
+- Vital signs if relevant (BP for vasoconstrictors, temperature for systemic infection)
+- Extraoral/intraoral exam findings
+- Tooth-specific findings: probing depths, mobility, percussion/palpation response, vitality test results
+- Radiographic interpretation
+
+ASSESSMENT
+- Primary diagnosis with ICD-10-CM code
+- Differential diagnosis
+- Tooth prognosis (good/fair/poor/hopeless)
+
+PLAN
+- Immediate treatment performed (e.g., I&D, pulpectomy, extraction)
+- Prescriptions: drug name, dose, route, frequency, duration
+- Follow-up treatment plan (e.g., RCT completion, crown, implant)
+- Referrals if needed (oral surgery, periodontist, endodontist)
+- Patient education: oral hygiene, post-op instructions
+
+FOLLOW-UP
+- 1-week follow-up for acute infections
+- 4-6 weeks for pulp treatment assessment
+- 3-4 months periodontal maintenance
+- Return precautions: worsening swelling, difficulty breathing/swallowing, fever → ER immediately

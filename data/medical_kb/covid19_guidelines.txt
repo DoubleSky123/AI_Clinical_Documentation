@@ -1,0 +1,68 @@
+COVID-19 Clinical Guidelines (CDC Summary)
+==========================================
+
+DIAGNOSIS
+---------
+COVID-19 is confirmed by positive NAAT or antigen test. Rapid antigen tests have
+high specificity but lower sensitivity; negative results in symptomatic patients
+with high pre-test probability should be confirmed by NAAT.
+
+Common symptoms: fever, cough, fatigue, sore throat, myalgia, headache, loss of
+taste/smell, shortness of breath. Onset typically 2–14 days after exposure.
+
+ICD-10 CODES
+------------
+U07.1  — COVID-19, virus identified (confirmed by test)
+U07.2  — COVID-19, virus not identified (clinical diagnosis, no test)
+Z20.822 — Contact with and (suspected) exposure to COVID-19
+Z86.16  — Personal history of COVID-19
+
+SEVERITY CLASSIFICATION
+-----------------------
+Mild:     Symptoms without shortness of breath or hypoxia
+Moderate: SpO2 >= 94% on room air; evidence of lower respiratory disease
+Severe:   SpO2 < 94% on room air; RR > 30; PaO2/FiO2 < 300
+Critical: Respiratory failure, septic shock, multi-organ dysfunction
+
+HIGH-RISK FEATURES (for severe disease)
+----------------------------------------
+Age >= 65, BMI >= 35, diabetes, chronic kidney disease, cardiovascular disease,
+immunocompromised state, pregnancy, active cancer treatment.
+
+ANTIVIRAL TREATMENT
+-------------------
+Nirmatrelvir/ritonavir (Paxlovid):
+  - Indication: Mild-moderate COVID-19, high risk of progression, within 5 days of symptom onset
+  - Dose: 300mg nirmatrelvir + 100mg ritonavir BID x 5 days
+  - Contraindications: severe renal impairment (eGFR <30), severe hepatic impairment
+  - Drug interactions: strong CYP3A inducers (rifampin, carbamazepine); check full interaction list
+
+Remdesivir (Veklury):
+  - Indication: Hospitalized patients or high-risk outpatients within 7 days of symptom onset
+  - Dose: 200mg IV on Day 1, then 100mg IV Days 2–3 (outpatient); 5-day inpatient course
+
+Molnupiravir (Lagevrio):
+  - Alternative when Paxlovid not appropriate
+  - Dose: 800mg BID x 5 days, within 5 days of symptom onset
+  - Not for use in pregnancy
+
+SUPPORTIVE CARE
+---------------
+- Antipyretics: Acetaminophen 500–1000mg q4–6h PRN (preferred) or Ibuprofen 400mg q6h PRN
+- Hydration: encourage oral fluids
+- Rest
+- Pulse oximetry monitoring for high-risk patients
+
+ISOLATION
+---------
+- Isolate for minimum 5 days from symptom onset
+- Mask around others through Day 10
+- Return to normal activities when afebrile x 24h and improving symptoms
+
+RETURN PRECAUTIONS
+------------------
+Instruct patients to return or call if:
+- SpO2 drops below 94%
+- Shortness of breath or chest pain develops
+- Symptoms significantly worsen after initial improvement
+- Unable to tolerate oral fluids

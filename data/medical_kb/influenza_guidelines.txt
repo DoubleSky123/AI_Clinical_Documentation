@@ -1,0 +1,56 @@
+Influenza Clinical Guidelines (CDC Summary)
+===========================================
+
+DIAGNOSIS
+---------
+Influenza is confirmed by rapid influenza diagnostic tests (RIDTs), rapid molecular
+assays, or RT-PCR. Rapid antigen tests have lower sensitivity (50–70%); clinical
+judgment is important when results are negative in high-prevalence settings.
+
+Typical symptoms: acute onset fever, chills, myalgia, headache, malaise, cough,
+sore throat. Nasal congestion common in children. GI symptoms more prominent in
+children (Type B).
+
+ICD-10 CODES
+------------
+J09.X2  — Influenza due to identified novel influenza A virus, with other respiratory manifestations
+J10.1   — Influenza due to other identified influenza virus with other respiratory manifestations
+J10.00  — Influenza due to other influenza virus with unspecified type of pneumonia
+J11.1   — Influenza due to unidentified influenza virus with other respiratory manifestations
+J11.00  — Influenza with unidentified pneumonia
+
+HIGH-RISK GROUPS
+----------------
+Age >= 65 or < 2 years, pregnancy, chronic pulmonary/cardiovascular/renal/hepatic/
+neurologic disease, immunosuppression, morbid obesity (BMI >= 40), residents of
+long-term care facilities.
+
+ANTIVIRAL TREATMENT
+-------------------
+Oseltamivir (Tamiflu):
+  - Indication: Confirmed or suspected flu in high-risk patients; start within 48h of symptom onset
+  - Adult dose: 75mg BID x 5 days
+  - Pediatric dose: weight-based (see prescribing info)
+  - Renal adjustment: CrCl 10–30 mL/min → 30mg BID
+
+Zanamivir (Relenza):
+  - Inhaled; 10mg (2 inhalations) BID x 5 days
+  - Avoid in patients with underlying airway disease
+
+Baloxavir marboxil (Xofluza):
+  - Single oral dose: 40mg (<80kg) or 80mg (>=80kg)
+  - Within 48h of symptom onset
+  - Not for pregnant/breastfeeding women
+
+SUPPORTIVE CARE
+---------------
+- Antipyretics: Acetaminophen or Ibuprofen (avoid aspirin in children — Reye syndrome risk)
+- Hydration and rest
+- Cough suppressants PRN
+
+RETURN PRECAUTIONS
+------------------
+- Shortness of breath or chest pain
+- Confusion or altered mental status
+- Persistent vomiting / inability to tolerate fluids
+- Symptoms improve then return with fever and worsening cough
