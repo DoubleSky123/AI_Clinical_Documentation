@@ -1,0 +1,86 @@
+[SOURCE: ADA Standards of Medical Care in Diabetes 2024, AACE/ACE Guidelines]
+[SPECIALTY: Primary Care / Endocrinology]
+[CONDITIONS: Type 2 Diabetes, Type 1 Diabetes, Prediabetes, Diabetic Complications]
+
+DIABETES — CLASSIFICATION AND ICD-10 CODES
+  Type 2 diabetes, unspecified:            E11.9
+  Type 2 diabetes with hyperglycemia:      E11.65
+  Type 2 diabetes with hypoglycemia:       E11.641
+  Type 2 diabetes with CKD stage 3:        E11.22 + N18.3
+  Type 2 diabetes with diabetic nephropathy: E11.21 (assign only if documented)
+  Type 2 diabetes with diabetic retinopathy: E11.311-E11.359 (specify stage)
+  Type 2 diabetes with neuropathy:         E11.40
+  Type 2 diabetes with foot ulcer:         E11.621 + L97.x
+  Type 1 diabetes, unspecified:            E10.9
+  Prediabetes / impaired fasting glucose:  R73.09
+  Gestational diabetes:                    O24.419
+
+CODING RULES — CRITICAL
+  Do NOT assign complication codes (E11.21, E11.22, E11.311) unless the complication
+  is explicitly documented by the provider. E11.9 is appropriate when no complications
+  are documented, even if the patient has long-standing diabetes.
+
+DIAGNOSTIC CRITERIA
+  Diabetes: FPG ≥126 mg/dL, or 2h PG ≥200 mg/dL on OGTT, or HbA1c ≥6.5%, or
+    random glucose ≥200 mg/dL with symptoms — confirmed on repeat testing
+  Prediabetes: FPG 100-125 mg/dL, or 2h PG 140-199 mg/dL, or HbA1c 5.7-6.4%
+
+GLYCEMIC TARGETS
+  HbA1c: <7.0% for most non-pregnant adults (individualize)
+  Less stringent <8.0%: elderly, limited life expectancy, severe hypoglycemia history
+  More stringent <6.5%: younger patients, short disease duration, no CVD, if achievable safely
+  Fasting glucose: 80-130 mg/dL
+  Postprandial (<2h): <180 mg/dL
+
+INITIAL TREATMENT — LIFESTYLE
+  Medical nutrition therapy: reduce refined carbs, increase fiber, caloric restriction
+  Physical activity: 150 min/week moderate aerobic + resistance training 2-3x/week
+  Weight loss: 5-10% body weight loss → significant HbA1c reduction in T2DM
+
+PHARMACOTHERAPY — FIRST-LINE
+  Metformin 500mg BID with meals (titrate to 1000mg BID over 4 weeks)
+    Contraindicated: eGFR <30 mL/min/1.73m², IV contrast (hold 48h before/after)
+    Side effects: GI upset (take with food), lactic acidosis (rare), B12 deficiency
+  If HbA1c ≥9% or markedly symptomatic: consider dual therapy from start
+
+SECOND-LINE OPTIONS (add to Metformin based on comorbidities)
+  Established CVD or high CV risk:
+    GLP-1 agonist: Semaglutide 0.5-1mg SC weekly (Ozempic) — reduces MACE
+    SGLT-2 inhibitor: Empagliflozin 10-25mg daily — reduces HF hospitalization, CKD progression
+  Heart failure:
+    SGLT-2 inhibitor preferred (Empagliflozin, Dapagliflozin)
+  CKD:
+    SGLT-2 inhibitor (eGFR ≥20), GLP-1 agonist
+  Weight loss priority:
+    GLP-1 agonist (Semaglutide — avg 15% weight loss), SGLT-2 inhibitor
+  Cost-sensitive:
+    Sulfonylurea: Glipizide 5mg daily (titrate), Glimepiride 1-4mg daily
+    DPP-4 inhibitor: Sitagliptin 100mg daily (weight-neutral, well tolerated)
+
+INSULIN THERAPY
+  Basal insulin: Glargine (Lantus/Basaglar) 10 units SC at bedtime, titrate by 2 units q3 days
+  Bolus insulin: Aspart (NovoLog) or Lispro (Humalog) with meals
+  Premixed: 70/30 insulin — less flexible, twice daily dosing
+
+HYPOGLYCEMIA MANAGEMENT
+  Mild-moderate (<70 mg/dL with symptoms): 15g fast-acting carbs (glucose tablets, juice)
+  Severe (unable to self-treat): Glucagon 1mg IM/SC or intranasal glucagon
+  ICD-10: E11.641 (T2DM with hypoglycemia without coma)
+
+MONITORING
+  HbA1c: every 3 months if not at goal; every 6 months if stable at goal
+  Annual: lipid panel, BMP (eGFR, K+), urine albumin-creatinine ratio, foot exam, eye exam
+  Blood pressure target: <130/80 mmHg
+  Statin therapy: all T2DM patients aged 40-75 regardless of baseline LDL
+
+COMPLICATION SCREENING
+  Nephropathy: urine ACR annually; GFR annually; ACE/ARB if ACR >30 mg/g
+  Retinopathy: dilated eye exam at diagnosis, then annually
+  Neuropathy: annual 10g monofilament foot exam + vibration testing
+  CVD: statin therapy, antiplatelet (aspirin 75-162mg if ASCVD >10%), BP control
+
+REFERRALS
+  Endocrinology: T1DM, uncontrolled T2DM (HbA1c >9%), complex insulin regimens
+  Ophthalmology: annual dilated eye exam
+  Podiatry: foot complications, neuropathy, peripheral arterial disease
+  Diabetes education: newly diagnosed, medication changes, poor self-management

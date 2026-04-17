@@ -1,0 +1,78 @@
+[SOURCE: ACC/AHA Hypertension Guidelines 2017, JNC 8, ESC/ESH 2018]
+[SPECIALTY: Primary Care / Cardiology]
+[CONDITIONS: Hypertension, Hypertensive Urgency, Hypertensive Emergency]
+
+HYPERTENSION — CLASSIFICATION AND ICD-10 CODES
+  Normal:           <120/<80 mmHg
+  Elevated:         120-129/<80 mmHg        ICD-10: R03.0
+  Stage 1 HTN:      130-139 or 80-89 mmHg  ICD-10: I10
+  Stage 2 HTN:      ≥140 or ≥90 mmHg       ICD-10: I10
+  Hypertensive Crisis: >180/>120 mmHg       ICD-10: I16.9
+  Hypertensive Urgency (no organ damage):   ICD-10: I16.0
+  Hypertensive Emergency (organ damage):    ICD-10: I16.1
+
+PRIMARY vs SECONDARY HYPERTENSION
+  Primary (Essential): ICD-10 I10 — accounts for 90-95% of cases
+  Secondary causes: Renal artery stenosis (I15.0), Primary aldosteronism (E26.0),
+    Chronic kidney disease (N18.x), Obstructive sleep apnea (G47.33),
+    Thyroid disease (E05.x / E03.9), Medication-induced (amlodipine, NSAIDs, OCPs)
+
+DIAGNOSTIC WORKUP
+  Confirm with 2+ readings on 2+ separate occasions
+  Home BP monitoring: preferred for white-coat or masked hypertension
+  Initial labs: BMP (Cr, K+, Na+), CBC, lipid panel, urinalysis, fasting glucose, ECG
+  Secondary workup if: age <30, resistant to 3 drugs, sudden onset, hypokalemia
+
+LIFESTYLE MODIFICATIONS (All stages — first-line)
+  DASH diet: reduce sodium <2.3g/day → BP reduction 5-6 mmHg
+  Weight loss: 1 mmHg per 1 kg weight loss
+  Exercise: 90-150 min/week aerobic → 5-8 mmHg reduction
+  Limit alcohol: ≤1 drink/day women, ≤2 drinks/day men
+  Smoking cessation: does not lower BP but reduces cardiovascular risk
+
+PHARMACOTHERAPY — STAGE 1 HTN (130-139/80-89)
+  Lifestyle modification x 3 months first
+  Initiate medication if: 10-year ASCVD risk ≥10%, diabetes, CKD, established CVD
+
+PHARMACOTHERAPY — STAGE 2 HTN (≥140/≥90)
+  Initiate medication immediately + lifestyle modification
+  Most patients: 2-drug combination from different classes
+
+FIRST-LINE DRUG CLASSES
+  Thiazide diuretics:   Hydrochlorothiazide 12.5-25mg daily, Chlorthalidone 12.5-25mg daily
+  ACE inhibitors:       Lisinopril 10-40mg daily, Enalapril 5-40mg daily
+  ARBs:                 Losartan 50-100mg daily, Valsartan 80-320mg daily
+  Calcium channel blockers: Amlodipine 2.5-10mg daily, Diltiazem 120-540mg daily
+
+DRUG SELECTION BY COMORBIDITY
+  Diabetes:        ACE inhibitor or ARB preferred (renoprotective)
+  CKD with proteinuria: ACE inhibitor or ARB (reduces proteinuria)
+  Heart failure:   ACE inhibitor/ARB + Beta-blocker + Diuretic
+  Post-MI:         Beta-blocker + ACE inhibitor
+  Afib:            Beta-blocker or rate-control CCB (Diltiazem, Verapamil)
+  Pregnancy:       Labetalol, Nifedipine, Methyldopa (ACE/ARB CONTRAINDICATED)
+  Black patients:  Thiazide + CCB preferred over ACE inhibitor monotherapy
+
+RESISTANT HYPERTENSION (BP uncontrolled on ≥3 drugs including diuretic)
+  ICD-10: I10 + add Z87.39 (history of compliance issues if applicable)
+  Evaluate: medication adherence, white-coat effect, secondary causes
+  Add: Spironolactone 25-50mg daily (most effective 4th-line agent)
+
+HYPERTENSIVE URGENCY/EMERGENCY
+  Urgency (no organ damage): Oral agents, reduce BP over 24-48 hours
+    Captopril 25mg SL or PO, Labetalol 200-400mg PO, Amlodipine 5-10mg PO
+  Emergency (organ damage): IV agents, reduce MAP by max 25% in first hour
+    Nicardipine IV drip, Labetalol IV, Sodium nitroprusside (hypertensive encephalopathy)
+    Target organs: brain (encephalopathy), heart (ACS), kidneys (AKI), eyes (papilledema)
+
+MONITORING AND FOLLOW-UP
+  Goal BP: <130/80 mmHg for most patients
+  Goal BP: <140/90 mmHg for age ≥65 (individualized based on frailty)
+  Follow-up: every 1 month until at goal, then every 3-6 months
+  Annual labs: BMP (monitor K+ with ACE/ARB/diuretics, Cr with ACE/ARB)
+  Referral to cardiology: resistant HTN, suspected secondary cause, end-organ damage
+
+IMPORTANT DRUG INTERACTIONS
+  ACE inhibitor + ARB combination: AVOID (increased AKI and hyperkalemia risk)
+  ACE inhibitor + potassium-sparing diuretics: monitor potassium closely
+  NSAIDs: blunt antihypertensive effect, worsen renal function — minimize use

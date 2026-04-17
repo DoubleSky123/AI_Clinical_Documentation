@@ -7,14 +7,18 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
 
+from langchain_community.retrievers import BM25Retriever
+
 from app.routers import notes, evaluate, voice
-from app.vectorstore.build_index import load_vectorstore
+from app.vectorstore.build_index import load_chunks, load_vectorstore
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: load FAISS index once, share across all requests
+    # Startup: load FAISS index + build BM25 retriever, share across all requests
     app.state.vectorstore = load_vectorstore()
+    chunks = load_chunks()
+    app.state.bm25_retriever = BM25Retriever.from_documents(chunks)
     yield
     # Shutdown: close Redis connection
     from app.cache import close_client

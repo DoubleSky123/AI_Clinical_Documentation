@@ -74,6 +74,9 @@ async def transcribe_and_document(
     vs = getattr(request.app.state, "vectorstore", None)
     if vs is None:
         raise HTTPException(status_code=503, detail="Vectorstore not ready")
+    bm25 = getattr(request.app.state, "bm25_retriever", None)
+    if bm25 is None:
+        raise HTTPException(status_code=503, detail="BM25 retriever not ready")
 
     t_total_start = time.perf_counter()
 
@@ -105,7 +108,7 @@ async def transcribe_and_document(
 
     # ── Step 2: RAG Pipeline ──────────────────────────────────────────────────
     t_llm_start = time.perf_counter()
-    soap        = await generate_soap_note(transcript, vs)
+    soap        = await generate_soap_note(transcript, vs, bm25)
     llm_ms      = round((time.perf_counter() - t_llm_start) * 1000, 2)
 
     total_ms = round((time.perf_counter() - t_total_start) * 1000, 2)

@@ -18,10 +18,12 @@ from typing import Any
 
 from langdetect import detect as _detect_lang
 
+from langchain.retrievers import EnsembleRetriever
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import ChatOllama
 from pydantic import BaseModel
+from sentence_transformers import CrossEncoder
 
 from app.models.schemas import SOAPNote
 from .state import ClinicalState
@@ -31,6 +33,19 @@ logger = logging.getLogger(__name__)
 # ── Shared LLM ────────────────────────────────────────────────────────────────
 
 _llm = ChatOllama(model="qwen2.5:7b", temperature=0)
+
+# ── CrossEncoder (lazy-loaded on first use) ───────────────────────────────────
+# BAAI/bge-reranker-base: ~270 MB, CPU inference, ~2-5s for 15 pairs
+
+_cross_encoder: CrossEncoder | None = None
+
+def _get_cross_encoder() -> CrossEncoder:
+    global _cross_encoder
+    if _cross_encoder is None:
+        logger.info("Loading CrossEncoder (BAAI/bge-reranker-base)...")
+        _cross_encoder = CrossEncoder("BAAI/bge-reranker-base")
+        logger.info("CrossEncoder loaded.")
+    return _cross_encoder
 
 
 # ── Pydantic schemas for specialized agents ───────────────────────────────────
@@ -76,19 +91,79 @@ def _lang_instruction(transcript: str) -> str:
     return "Write all output fields (subjective, objective, assessment, plan, follow_up, medications, clinical_flags) in English."
 
 
-# ── Node 1: Retrieval ─────────────────────────────────────────────────────────
+# ── Node 1: Hybrid Retrieval ──────────────────────────────────────────────────
 
 def retrieve_context(state: ClinicalState) -> dict[str, Any]:
-    """MMR retrieval over FAISS — fetch diverse clinical guideline chunks."""
-    retriever = state["vectorstore"].as_retriever(
+    """Hybrid retrieval: BM25 (keyword) + FAISS MMR (semantic), fused with RRF.
+
+    BM25  → precise term matching (drug names, ICD codes, exact phrases)
+    FAISS → semantic similarity (concept-level matching)
+    RRF   → rank fusion, no manual weight tuning needed
+    Returns raw_docs (unranked candidates) for the Evaluator Agent to rerank.
+    """
+    faiss_retriever = state["vectorstore"].as_retriever(
         search_type="mmr",
-        search_kwargs={"k": 6, "fetch_k": 20, "lambda_mult": 0.6},
+        search_kwargs={"k": 10, "fetch_k": 30, "lambda_mult": 0.6},
     )
-    docs = retriever.invoke(state["transcript"])
-    return {"context": _format_docs(docs)}
+    bm25_retriever = state["bm25_retriever"]
+    bm25_retriever.k = 10
+
+    ensemble = EnsembleRetriever(
+        retrievers=[bm25_retriever, faiss_retriever],
+        weights=[0.4, 0.6],
+    )
+    docs = ensemble.invoke(state["transcript"])
+    logger.info("Hybrid retrieval returned %d candidate chunks", len(docs))
+    return {"raw_docs": docs}
 
 
-# ── Node 2: Extraction Agent ──────────────────────────────────────────────────
+# ── Node 2: Evaluator Agent ───────────────────────────────────────────────────
+
+def evaluate_context(state: ClinicalState) -> dict[str, Any]:
+    """Evaluator Agent: CrossEncoder reranking + retrieval quality gating.
+
+    Scores each (transcript, chunk) pair with a cross-encoder.
+    Selects top-6 by score, then classifies context quality:
+      good  (avg >= 0.5): high-confidence retrieval
+      low   (avg >= 0.1): relevant chunks found but weak signal
+      none  (avg <  0.1): no relevant context — LLM will run without grounding
+    """
+    docs = state.get("raw_docs", [])
+    if not docs:
+        return {"context": "", "retrieval_scores": [], "context_quality": "none"}
+
+    ce = _get_cross_encoder()
+    # Truncate transcript to 512 chars for CrossEncoder input limit
+    query = state["transcript"][:512]
+    pairs = [(query, doc.page_content) for doc in docs]
+    scores: list[float] = ce.predict(pairs).tolist()
+
+    # Rank by descending score and take top-6
+    ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
+    top_pairs = ranked[:6]
+    top_scores = [s for s, _ in top_pairs]
+    top_docs   = [d for _, d in top_pairs]
+
+    avg_score = sum(top_scores) / len(top_scores)
+    if avg_score >= 0.5:
+        quality = "good"
+    elif avg_score >= 0.1:
+        quality = "low"
+    else:
+        quality = "none"
+
+    logger.info(
+        "Evaluator Agent: quality=%s  avg_score=%.3f  top_scores=%s",
+        quality, avg_score, [round(s, 3) for s in top_scores],
+    )
+    return {
+        "context":          _format_docs(top_docs),
+        "retrieval_scores": top_scores,
+        "context_quality":  quality,
+    }
+
+
+# ── Node 3: Extraction Agent ──────────────────────────────────────────────────
 
 _EXTRACTION_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are a senior clinical documentation specialist.
@@ -119,7 +194,7 @@ def extract_soap(state: ClinicalState) -> dict[str, Any]:
     return {"soap_draft": note.model_dump()}
 
 
-# ── Node 3: ICD Coding Agent (parallel) ──────────────────────────────────────
+# ── Node 4: ICD Coding Agent (parallel) ──────────────────────────────────────
 
 _ICD_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are an ICD-10-CM coding specialist for primary care and general dentistry.
@@ -158,7 +233,7 @@ def audit_icd_codes(state: ClinicalState) -> dict[str, Any]:
     return {"icd_codes": cleaned}
 
 
-# ── Node 4: Medication Agent (parallel) ──────────────────────────────────────
+# ── Node 5: Medication Agent (parallel) ──────────────────────────────────────
 
 _MED_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are a clinical pharmacist reviewing an AI-generated SOAP note.
@@ -185,7 +260,7 @@ def audit_medications(state: ClinicalState) -> dict[str, Any]:
     return {"medications": result.medications}
 
 
-# ── Node 5: Clinical Flags Agent (parallel) ───────────────────────────────────
+# ── Node 6: Clinical Flags Agent (parallel) ───────────────────────────────────
 
 _FLAGS_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are a clinical risk assessment specialist.
@@ -214,15 +289,34 @@ def detect_clinical_flags(state: ClinicalState) -> dict[str, Any]:
     return {"clinical_flags": result.clinical_flags}
 
 
-# ── Node 6: Supervisor ────────────────────────────────────────────────────────
+# ── Node 7: Supervisor ────────────────────────────────────────────────────────
 
 def supervise(state: ClinicalState) -> dict[str, Any]:
     """
     Supervisor Node: merges outputs from the three parallel agents
     into the final validated SOAP note.
+    Injects retrieval quality warnings when context was weak or absent.
     """
+    import re
     note = dict(state["soap_draft"])
     note["icd10_codes"]    = state.get("icd_codes",      note.get("icd10_codes", []))
     note["medications"]    = state.get("medications",    note.get("medications", []))
     note["clinical_flags"] = state.get("clinical_flags", note.get("clinical_flags", []))
+
+    quality = state.get("context_quality", "good")
+    is_chinese = bool(re.search(r'[\u4e00-\u9fff]', state.get("transcript", "")))
+
+    if quality == "low":
+        warning = (
+            "[低召回警告] 检索到的指南相关性较低，建议人工复核" if is_chinese
+            else "[LOW RECALL] Retrieved guidelines have weak relevance — manual review recommended"
+        )
+        note["clinical_flags"] = [warning] + note["clinical_flags"]
+    elif quality == "none":
+        warning = (
+            "[无召回警告] 未找到相关临床指南，SOAP 内容基于纯模型推理" if is_chinese
+            else "[NO RECALL] No relevant guidelines found — SOAP based on model knowledge only"
+        )
+        note["clinical_flags"] = [warning] + note["clinical_flags"]
+
     return {"final_note": note}

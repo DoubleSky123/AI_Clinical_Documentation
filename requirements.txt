@@ -11,6 +11,7 @@ sentence-transformers>=3.0.0
 
 # Vector store
 faiss-cpu>=1.7.4
+rank-bm25>=0.2.2
 
 # Speech to text (local Whisper, GPU-accelerated)
 openai-whisper>=20231117

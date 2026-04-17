@@ -1,0 +1,75 @@
+[SOURCE: ATS/IDSA Community-Acquired Pneumonia Guidelines 2019]
+[SPECIALTY: Pulmonology / Primary Care]
+[CONDITIONS: Pneumonia, CAP, HAP, Aspiration Pneumonia]
+
+COMMUNITY-ACQUIRED PNEUMONIA (CAP) — DIAGNOSIS
+ICD-10: J18.9 (unspecified), J18.1 (lobar), J15.9 (unspecified bacterial), J12.9 (viral)
+Diagnosis requires: new pulmonary infiltrate on imaging PLUS at least two of:
+  - Fever >38°C or hypothermia <36°C
+  - Purulent sputum or change in sputum character
+  - Leukocytosis >10,000/μL or leukopenia <4,000/μL
+  - Cough, dyspnea, pleuritic chest pain, new crackles on auscultation
+
+SEVERITY ASSESSMENT — PSI / CURB-65
+CURB-65 Score (1 point each):
+  C = Confusion (new onset)
+  U = Urea >7 mmol/L (BUN >19 mg/dL)
+  R = Respiratory rate ≥30/min
+  B = Blood pressure <90 systolic or ≤60 diastolic
+  65 = Age ≥65 years
+  Score 0-1: Low severity — outpatient treatment appropriate
+  Score 2:   Moderate — consider hospital admission
+  Score ≥3:  Severe — hospital admission required; ICU if score ≥5
+
+HIGH-RISK FEATURES REQUIRING HOSPITALIZATION
+  - SpO2 <94% on room air
+  - Respiratory rate >30 breaths/min
+  - Bilateral or multilobar involvement
+  - Sepsis or septic shock
+  - Immunocompromised (HIV, transplant, chemotherapy, high-dose steroids)
+  - Age ≥65 with comorbidities
+  - Failed outpatient therapy after 72 hours
+
+OUTPATIENT TREATMENT (Low severity, no comorbidities)
+  First-line: Amoxicillin 500mg PO TID x 5 days
+  Atypical coverage: Azithromycin 500mg day 1, then 250mg days 2-5
+  PCN allergy: Doxycycline 100mg PO BID x 5 days
+  Combination: Amoxicillin + Azithromycin (if atypical suspected)
+
+OUTPATIENT TREATMENT (With comorbidities: COPD, diabetes, heart/renal/liver disease)
+  Respiratory fluoroquinolone: Levofloxacin 750mg PO daily x 5 days
+  OR: Moxifloxacin 400mg PO daily x 5 days
+  OR: Beta-lactam + Macrolide combination
+
+INPATIENT TREATMENT (Non-ICU)
+  Beta-lactam (Ampicillin-sulbactam, Ceftriaxone, or Cefotaxime)
+  PLUS Macrolide (Azithromycin 500mg IV/PO daily)
+  OR Respiratory fluoroquinolone monotherapy (Levofloxacin 750mg IV/PO)
+  Duration: 5 days minimum; extend if no clinical improvement
+
+INPATIENT TREATMENT (ICU)
+  Beta-lactam (Ceftriaxone 1g IV q24h or Ampicillin-sulbactam 3g IV q6h)
+  PLUS Azithromycin 500mg IV daily OR Fluoroquinolone
+  If Pseudomonas risk: Anti-pseudomonal beta-lactam (Piperacillin-tazobactam 4.5g IV q6h)
+
+ATYPICAL PATHOGENS (Mycoplasma, Chlamydophila, Legionella)
+  Macrolide or Doxycycline coverage required
+  Legionella urinary antigen test if: severe CAP, travel, legionella outbreak
+  ICD-10 Legionella pneumonia: A48.1
+
+ASPIRATION PNEUMONIA
+  ICD-10: J69.0
+  Risk factors: dysphagia, altered consciousness, GERD, alcohol use
+  Treatment: Amoxicillin-clavulanate 875/125mg PO BID x 7 days
+  Or Clindamycin 300mg PO TID (anaerobic coverage)
+
+FOLLOW-UP AND MONITORING
+  Clinical response expected within 48-72 hours
+  Repeat CXR at 6-8 weeks if: smoker, age >50, to rule out underlying malignancy
+  Blood cultures: obtain before antibiotics in hospitalized patients
+  Procalcitonin: useful for antibiotic stewardship decisions
+
+PREVENTION
+  Pneumococcal vaccine (PCV15 or PCV20): all adults ≥65, high-risk younger adults
+  Influenza vaccine: annual, reduces secondary bacterial pneumonia risk
+  Smoking cessation counseling: ICD-10 Z87.891 (history of tobacco use)

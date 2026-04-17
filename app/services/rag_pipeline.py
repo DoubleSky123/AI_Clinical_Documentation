@@ -120,7 +120,7 @@ def build_pipeline(vectorstore: FAISS) -> Any:
     return extraction_chain | RunnableLambda(refine)
 
 
-async def generate_soap_note(transcript: str, vectorstore: FAISS) -> dict:
+async def generate_soap_note(transcript: str, vectorstore: FAISS, bm25_retriever: any) -> dict:
     """
     Async entry point called by FastAPI.
     1. Check Redis cache — return immediately on hit.
@@ -140,7 +140,7 @@ async def generate_soap_note(transcript: str, vectorstore: FAISS) -> dict:
         if cached is not None:
             return cached
 
-        result = await run_pipeline(transcript, vectorstore)
+        result = await run_pipeline(transcript, vectorstore, bm25_retriever)
 
     await set_soap(transcript, result)
     return result

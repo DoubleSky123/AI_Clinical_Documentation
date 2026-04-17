@@ -43,10 +43,13 @@ async def generate_note(body: ValidatedTranscriptRequest, request: Request):
     vs = getattr(request.app.state, "vectorstore", None)
     if vs is None:
         raise HTTPException(status_code=503, detail="Vectorstore not ready.")
+    bm25 = getattr(request.app.state, "bm25_retriever", None)
+    if bm25 is None:
+        raise HTTPException(status_code=503, detail="BM25 retriever not ready.")
 
     t0 = time.perf_counter()
     try:
-        soap = await generate_soap_note(body.transcript, vs)
+        soap = await generate_soap_note(body.transcript, vs, bm25)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import os
+import pickle
 from pathlib import Path
 
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
@@ -40,6 +41,7 @@ def _load_documents(kb_path: Path) -> list[Document]:
         str(kb_path),
         glob="**/*.txt",
         loader_cls=TextLoader,
+        loader_kwargs={"encoding": "utf-8"},
         show_progress=True,
     )
     docs = loader.load()
@@ -60,6 +62,10 @@ def build_vectorstore(kb_path: Path = KB_PATH) -> FAISS:
 
     INDEX_PATH.mkdir(parents=True, exist_ok=True)
     vs.save_local(str(INDEX_PATH))
+
+    # Persist chunks for BM25 retriever (loaded separately at startup)
+    with open(INDEX_PATH / "chunks.pkl", "wb") as f:
+        pickle.dump(chunks, f)
     logger.info("FAISS index saved → %s  (%d vectors)", INDEX_PATH, vs.index.ntotal)
     return vs
 
@@ -76,6 +82,20 @@ def update_vectorstore(new_docs_path: Path) -> FAISS:
     vs.save_local(str(INDEX_PATH))
     logger.info("Added %d chunks; total vectors: %d", len(new_chunks), vs.index.ntotal)
     return vs
+
+
+def load_chunks() -> list[Document]:
+    """Load persisted document chunks for BM25 retriever."""
+    chunks_path = INDEX_PATH / "chunks.pkl"
+    if not chunks_path.exists():
+        raise FileNotFoundError(
+            f"Chunks not found at {chunks_path}.\n"
+            "Run:  python -m app.vectorstore.build_index"
+        )
+    with open(chunks_path, "rb") as f:
+        chunks = pickle.load(f)
+    logger.info("Loaded %d chunks for BM25", len(chunks))
+    return chunks
 
 
 def load_vectorstore() -> FAISS:

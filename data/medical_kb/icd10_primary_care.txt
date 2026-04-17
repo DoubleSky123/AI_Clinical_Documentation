@@ -1,0 +1,134 @@
+[SOURCE: ICD-10-CM Official Guidelines for Coding and Reporting FY2024, CDC]
+[SPECIALTY: Primary Care / General]
+[CONTENT: High-frequency ICD-10-CM codes for primary care — with coding rules]
+
+RESPIRATORY INFECTIONS
+  J00     Acute nasopharyngitis (common cold)
+  J01.00  Acute maxillary sinusitis, unspecified
+  J01.10  Acute frontal sinusitis, unspecified
+  J01.90  Acute sinusitis, unspecified
+  J02.0   Streptococcal pharyngitis (strep throat — requires positive test)
+  J02.9   Acute pharyngitis, unspecified
+  J03.00  Acute streptococcal tonsillitis, unspecified
+  J04.0   Acute laryngitis
+  J06.9   Acute upper respiratory infection, unspecified
+  J09.X2  Influenza due to identified novel influenza A virus with pneumonia
+  J10.1   Influenza due to other identified influenza virus with pneumonia
+  J10.2   Influenza due to other identified influenza virus with GI manifestations
+  J11.1   Influenza due to unidentified influenza virus with pneumonia
+  J11.89  Influenza with other manifestations (fever, myalgia, URI symptoms) — most common
+  J12.9   Viral pneumonia, unspecified
+  J15.9   Unspecified bacterial pneumonia
+  J18.1   Lobar pneumonia, unspecified organism
+  J18.9   Pneumonia, unspecified organism
+  J20.9   Acute bronchitis, unspecified
+  J22     Unspecified acute lower respiratory infection
+  J44.0   COPD with acute lower respiratory infection
+  J44.1   COPD with acute exacerbation
+  J45.20  Mild intermittent asthma, uncomplicated
+  J45.21  Mild intermittent asthma with acute exacerbation
+  J45.41  Moderate persistent asthma with acute exacerbation
+  U07.1   COVID-19 (confirmed — positive NAAT or antigen test)
+
+COVID-19 CODING RULES
+  U07.1: Use ONLY when COVID-19 is confirmed by positive test
+  U07.2: REMOVED from ICD-10-CM — do NOT use for suspected/probable COVID
+  Z20.828: Contact with and (suspected) exposure to other viral communicable diseases
+    (use for COVID exposure without confirmed infection)
+  Additional codes: Add J22 (lower resp), J12.89 (viral pneumonia), or J11.89 as needed
+  Note: Z20.41 and Z20.49 are NOT valid codes for COVID exposure
+
+CARDIOVASCULAR
+  I10     Essential (primary) hypertension
+  I11.9   Hypertensive heart disease without heart failure
+  I13.10  Hypertensive heart and chronic kidney disease without heart failure, CKD stage 1-4
+  I16.0   Hypertensive urgency
+  I16.1   Hypertensive emergency
+  I16.9   Hypertensive crisis, unspecified
+  I25.10  Atherosclerotic heart disease of native coronary artery without angina
+  I48.0   Paroxysmal atrial fibrillation
+  I48.11  Longstanding persistent atrial fibrillation
+  I50.9   Heart failure, unspecified
+  I63.9   Cerebral infarction, unspecified (stroke)
+
+ENDOCRINE / METABOLIC
+  E03.9   Hypothyroidism, unspecified
+  E05.90  Hyperthyroidism, unspecified without thyrotoxic crisis
+  E10.9   Type 1 diabetes mellitus without complications
+  E11.9   Type 2 diabetes mellitus without complications  ← USE THIS when no complications documented
+  E11.21  Type 2 DM with diabetic nephropathy             ← only if explicitly documented
+  E11.22  Type 2 DM with diabetic CKD stage 3             ← only if explicitly documented
+  E11.311 Type 2 DM with unspecified diabetic retinopathy ← only if explicitly documented
+  E11.40  Type 2 DM with diabetic neuropathy, unspecified ← only if explicitly documented
+  E11.65  Type 2 DM with hyperglycemia
+  E11.641 Type 2 DM with hypoglycemia without coma
+  E66.9   Obesity, unspecified
+  E78.5   Hyperlipidemia, unspecified
+  R73.09  Other abnormal glucose (prediabetes, impaired fasting glucose)
+
+GASTROINTESTINAL
+  K02.9   Dental caries, unspecified
+  K04.0   Pulpitis
+  K04.7   Periapical abscess without sinus
+  K05.10  Chronic gingivitis, plaque induced
+  K05.30  Chronic periodontitis, unspecified
+  K08.101 Complete loss of teeth, unspecified cause, class I
+  K21.0   Gastro-esophageal reflux disease with esophagitis
+  K21.9   Gastro-esophageal reflux disease without esophagitis
+  K25.9   Gastric ulcer, unspecified
+  K29.70  Gastritis, unspecified, without bleeding
+  K57.30  Diverticulosis of large intestine without perforation or abscess, without bleeding
+  K92.1   Melena
+
+MUSCULOSKELETAL
+  M10.9   Gout, unspecified
+  M19.90  Primary osteoarthritis, unspecified site
+  M25.511 Pain in right shoulder
+  M25.521 Pain in right hip
+  M54.50  Low back pain, unspecified
+  M54.51  Vertebrogenic low back pain
+  M79.3   Panniculitis, unspecified
+
+GENITOURINARY
+  N18.3   Chronic kidney disease, stage 3 (GFR 30-59)
+  N18.4   Chronic kidney disease, stage 4 (GFR 15-29)
+  N18.9   Chronic kidney disease, unspecified
+  N39.0   Urinary tract infection, site not specified
+  N40.0   Benign prostatic hyperplasia without lower urinary tract symptoms
+
+MENTAL HEALTH
+  F32.9   Major depressive disorder, single episode, unspecified
+  F33.0   Major depressive disorder, recurrent, mild
+  F41.1   Generalized anxiety disorder
+  F41.9   Anxiety disorder, unspecified
+
+SYMPTOMS AND SIGNS (use when diagnosis not established)
+  R00.0   Tachycardia, unspecified
+  R05.9   Cough, unspecified
+  R06.00  Dyspnea, unspecified
+  R06.2   Wheezing
+  R07.9   Chest pain, unspecified
+  R09.02  Hypoxemia (SpO2 <94% on room air)
+  R10.9   Unspecified abdominal pain
+  R50.9   Fever, unspecified
+  R51.9   Headache, unspecified
+  R68.89  Other specified general symptoms and signs
+
+PREVENTIVE / Z-CODES
+  Z00.00  Encounter for general adult medical examination without abnormal findings
+  Z12.11  Encounter for screening for malignant neoplasm of colon
+  Z20.828 Contact with and suspected exposure to other viral communicable diseases (COVID)
+  Z23     Encounter for immunization
+  Z71.3   Dietary counseling and surveillance
+  Z82.49  Family history of ischemic heart disease and other diseases of the circulatory system
+  Z87.891 Personal history of nicotine dependence
+  Z96.641 Presence of right artificial knee joint
+
+CODING PRINCIPLES FOR PRIMARY CARE
+  1. Code to highest documented specificity — if provider documents "type 2 diabetes with
+     nephropathy," use E11.21; if only "diabetes," use E11.9
+  2. Code active conditions being treated/monitored — do not code historical/resolved conditions
+     unless they affect current management (use Z87.x history codes)
+  3. Symptom codes (R-codes): use only when no definitive diagnosis established
+  4. Z-codes for preventive encounters, screenings, and follow-up visits
+  5. Secondary diagnoses: code conditions that affect management of primary diagnosis

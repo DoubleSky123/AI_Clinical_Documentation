@@ -1,0 +1,151 @@
+[SOURCE: FDA DailyMed, Epocrates, Clinical Pharmacology 2024]
+[SPECIALTY: Primary Care / General]
+[CONTENT: Common outpatient medications — dose, route, indication, key interactions]
+
+ANTIBIOTICS — RESPIRATORY
+
+Amoxicillin (Amoxil)
+  Class: Aminopenicillin
+  Dose: 500mg PO TID or 875mg PO BID x 5-10 days
+  Indications: CAP (mild), sinusitis, strep pharyngitis, otitis media, dental infections
+  Contraindications: PCN allergy
+  Key interactions: Warfarin (↑INR), OCPs (minor)
+  ICD-10 common use: J18.9, J01.90, J02.0, K04.7
+
+Azithromycin (Zithromax, Z-Pack)
+  Class: Macrolide
+  Dose: 500mg PO day 1, then 250mg PO days 2-5 (Z-pack)
+  Or: 500mg PO daily x 3 days (respiratory infections)
+  Indications: CAP (atypical pathogens), Chlamydia, exacerbation of COPD
+  Contraindications: QT prolongation, hepatic failure
+  Key interactions: QT-prolonging drugs (risk of Torsades), Warfarin (↑INR)
+  Note: High resistance in strep pharyngitis — not first-line
+
+Doxycycline (Vibramycin)
+  Class: Tetracycline
+  Dose: 100mg PO BID x 5-7 days (respiratory); x 10 days (Lyme, sinusitis)
+  Indications: CAP (atypical), Lyme disease, sinusitis, STIs (Chlamydia)
+  Contraindications: Pregnancy, children <8 years (teeth staining)
+  Key interactions: Antacids/calcium reduce absorption (take 2h apart), Warfarin
+  Administration: Take with full glass of water; remain upright 30 min (esophagitis risk)
+
+Levofloxacin (Levaquin)
+  Class: Fluoroquinolone
+  Dose: 750mg PO/IV daily x 5 days (CAP); 500mg daily x 7-14 days (UTI, sinusitis)
+  Indications: CAP with comorbidities, complicated UTI, acute exacerbation COPD
+  Contraindications: QT prolongation, myasthenia gravis, tendinopathy history
+  Black Box Warning: Tendon rupture, peripheral neuropathy, CNS effects
+  Key interactions: Antacids (2h separation), QT-prolonging drugs, Warfarin
+
+Amoxicillin-Clavulanate (Augmentin)
+  Dose: 875/125mg PO BID x 5-10 days
+  Indications: Sinusitis (moderate-severe), otitis media, bite wounds, aspiration pneumonia
+  Note: Higher GI side effects than amoxicillin alone; take with food
+
+ANTIBIOTICS — DENTAL
+
+Amoxicillin (dental use)
+  Dose: 500mg PO TID x 3-7 days (odontogenic infections)
+  Endocarditis prophylaxis: 2g PO single dose 30-60 min before procedure
+
+Clindamycin (Cleocin)
+  Class: Lincosamide
+  Dose: 300mg PO QID or 150mg PO QID x 7 days (dental/oral infections)
+  Or: 600mg PO single dose (endocarditis prophylaxis, PCN allergy)
+  Indications: Dental abscess (PCN allergy), anaerobic infections, aspiration pneumonia
+  Black Box Warning: C. difficile colitis (can occur weeks after treatment)
+  Key interactions: Neuromuscular blockers (potentiates)
+
+Metronidazole (Flagyl)
+  Dose: 500mg PO TID x 7 days (dental infections, often combined with amoxicillin)
+  Indications: Periodontal infections, C. difficile (250mg QID x 10 days), H. pylori
+  Contraindications: First trimester pregnancy, alcohol use during and 48h after
+  Key interactions: Warfarin (↑INR significantly), alcohol (disulfiram reaction)
+
+ANTIVIRALS
+
+Oseltamivir (Tamiflu)
+  Dose: 75mg PO BID x 5 days (treatment); 75mg PO daily x 10 days (prophylaxis)
+  Pediatric: weight-based dosing (see package insert)
+  Indication: Influenza A and B — start within 48h of symptom onset for maximum benefit
+  High-risk criteria for treatment: age ≥65, age <2, pregnancy, immunocompromised,
+    severe disease (hospitalization), chronic conditions (diabetes, COPD, cardiac disease)
+  Side effects: Nausea/vomiting (take with food), rare neuropsychiatric events
+
+Nirmatrelvir/Ritonavir (Paxlovid)
+  Dose: Nirmatrelvir 300mg + Ritonavir 100mg PO BID x 5 days
+  Renal adjustment: eGFR 30-59: Nirmatrelvir 150mg + Ritonavir 100mg BID x 5 days
+  Contraindicated: eGFR <30, severe hepatic impairment
+  Indication: Mild-moderate COVID-19 in adults at high risk of progression
+  High-risk: age ≥65, obesity, diabetes, heart disease, immunocompromised
+  Must start within 5 days of symptom onset
+  Critical interactions: Statins (hold simvastatin/lovastatin), immunosuppressants,
+    anticoagulants (monitor closely), antiarrhythmics
+  Rebound: COVID rebound in ~5-10% after treatment completion — not re-treatment needed
+
+Remdesivir (Veklury)
+  Dose: 200mg IV day 1, then 100mg IV daily x 4 more days (inpatient)
+  Or: 200mg IV day 1, 100mg IV days 2-3 (outpatient, for high-risk patients)
+  Indication: COVID-19 requiring supplemental oxygen or hospitalized patients
+  Side effects: Bradycardia, elevated hepatic enzymes
+
+ANALGESICS / ANTIPYRETICS
+
+Acetaminophen (Tylenol, Paracetamol)
+  Dose: 325-1000mg PO/PR q4-6h; max 3000mg/day (liver disease: max 2000mg/day)
+  Indications: Pain (mild-moderate), fever
+  Contraindications: Severe hepatic impairment
+  Warning: Hepatotoxicity with overdose or alcohol use; check OTC combination products
+  ICD-10: Used for symptom management across many conditions
+
+Ibuprofen (Advil, Motrin)
+  Class: NSAID
+  Dose: 400-800mg PO TID-QID with food; max 3200mg/day
+  OTC dose: 200-400mg q4-6h; max 1200mg/day
+  Indications: Pain, fever, inflammation, dysmenorrhea
+  Contraindications: Peptic ulcer, CKD (eGFR <30), heart failure, last trimester pregnancy
+  Warning: Cardiovascular risk (especially with CHD), GI bleeding, renal impairment
+  Key interactions: Antihypertensives (reduces effect), Warfarin, aspirin (↑GI risk), ACE inhibitors
+
+INHALED MEDICATIONS — RESPIRATORY
+
+Albuterol (ProAir, Ventolin, Proventil)
+  Class: Short-acting beta-2 agonist (SABA)
+  Dose: 2 puffs q4-6h PRN (rescue inhaler); 2.5mg via nebulizer q4-6h
+  Indications: Acute bronchospasm, asthma exacerbation, COPD exacerbation
+  ICD-10 common use: J45.20-J45.51 (asthma), J44.1 (COPD exacerbation)
+  Side effects: Tachycardia, tremor, hypokalemia (high doses)
+  Note: If using >2 days/week, reassess control medication
+
+Fluticasone/Salmeterol (Advair)
+  Class: ICS/LABA combination
+  Dose: 100/50, 250/50, or 500/50 mcg BID (diskus) — based on severity
+  Indications: Asthma maintenance, COPD maintenance (250/50 or 500/50)
+  Note: Rinse mouth after use to prevent oral candidiasis
+  Contraindication: Not for acute bronchospasm (not a rescue inhaler)
+
+GASTROINTESTINAL
+
+Omeprazole (Prilosec)
+  Class: Proton pump inhibitor (PPI)
+  Dose: 20-40mg PO daily before meal x 4-8 weeks
+  Indications: GERD, peptic ulcer, H. pylori eradication, NSAID gastroprotection
+  Long-term use concerns: C. diff risk, hypomagnesemia, B12 deficiency, fracture risk
+  ICD-10: K21.0 (GERD with esophagitis), K25.x (gastric ulcer), K26.x (duodenal ulcer)
+
+CARDIOVASCULAR
+
+Atorvastatin (Lipitor)
+  Class: HMG-CoA reductase inhibitor (statin)
+  Dose: 10-80mg PO daily at bedtime
+  Indications: Hyperlipidemia, ASCVD prevention (primary and secondary)
+  ICD-10: E78.5 (hyperlipidemia), Z82.49 (family history of ischemic heart disease)
+  Key interactions: Strong CYP3A4 inhibitors (azole antifungals, clarithromycin, Paxlovid)
+  Side effects: Myopathy (check CK if muscle pain), elevated LFTs (rare)
+  Monitoring: LFTs at baseline; lipid panel at 4-12 weeks after initiation
+
+Aspirin (low-dose)
+  Dose: 81mg PO daily (cardiovascular prevention)
+  Indications: Secondary prevention of ASCVD (established CVD), ACS, post-stent
+  Primary prevention: Only if ASCVD 10-year risk >10% and age 40-59 (individualize)
+  Contraindications: Active bleeding, allergy, children with viral illness (Reye's syndrome)
